@@ -14,7 +14,7 @@ class OrderController extends Controller
         $total_price = request('total_price');
         $quantity = request('quantity');
         $inserted_order = order::create([
-            'user_id' => null, //guest user
+            'user_id' => request('user_id'), //guest user
             'quantity' => $quantity,
             'firstname' => request('firstname'),
             'lastname' => request('lastname'),

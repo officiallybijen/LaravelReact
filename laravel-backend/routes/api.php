@@ -44,3 +44,4 @@ Route::get("product/{id?}",[ProductController::class,'index']);
 Route::get("student",[StudentController::class,'index']);
 Route::post("after_checkout",[OrderController::class,'after_checkout']);
 Route::post("create_user",[UserController::class,'store']);
+Route::post("login",[UserController::class,'login']);
